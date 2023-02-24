@@ -1,3 +1,4 @@
 .idea
+*.pdf
 venv/
 __pycache__/
