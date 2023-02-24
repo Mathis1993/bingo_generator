@@ -1,0 +1,2 @@
+class NotEnoughItemsException(Exception):
+    pass
