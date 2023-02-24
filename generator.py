@@ -6,8 +6,8 @@ from typing import Dict, List
 
 import numpy as np
 import pandas as pd
+
 from exceptions import NotEnoughItemsException
-from weasyprint import CSS, HTML
 
 logger = logging.getLogger("generator")
 
@@ -44,7 +44,7 @@ class Generator:
         with open(self.path_to_html_file, "r") as f:
             return f.read()
 
-    def generate_samples(self, number_of_samples: int = 100):
+    def generate_samples(self, number_of_samples: int = 10):
         self.creation_counter = 0
         [self.generate_one_sample() for _ in range(number_of_samples)]
 
