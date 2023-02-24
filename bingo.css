@@ -1,0 +1,80 @@
+/* Thanks to https://codepen.io/bhmann/pen/QvGRdG */
+@page {
+  size: A4;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background: #ffffff;
+  color: #000000;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  user-select: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+main {
+  width: 19.2cm;
+  border: 3px solid #000000;
+  border-radius: 15px;
+  background: transparent;
+}
+
+h1 {
+  color: #000000;
+  font-size: 5rem;
+  text-align: center;
+  width: 19cm;
+  margin-top: 0.5cm;
+  margin-bottom: 0.5cm;
+}
+
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 19cm;
+  height: 21cm;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  width: 3.7cm;
+  height: 3.7cm;
+  border: 3px solid #000000;
+  border-radius: 15px;
+  background: #ffffff;
+  margin-bottom: 3px;
+}
+label input {
+  display: none;
+}
+label input:checked + .mark {
+  background: transparent;
+  color: #ffffff;
+}
+label .mark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 3.5cm;
+  height: 3.5cm;
+  padding: 0.05rem;
+  border-radius: 12px;
+  background: #ffffff;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+small {
+  display: block;
+  padding: 2em;
+  text-align: center;
+  font-size: 1rem;
+}
