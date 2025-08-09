@@ -4,4 +4,5 @@ bingo_*.html
 ~$*
 .DS_Store
 venv/
+.venv/
 __pycache__/
