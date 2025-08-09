@@ -2,6 +2,8 @@
 
 Generate pdf bingo cards to print for your party from an item pool (`items.xlsx` per default).
 
+![bingo card example](sample_bingo.png)
+
 ## Usage
 1. Create and activate a virtual environment, e.g. by running `python -m venv venv && source venv/bin/activate` (bash).
 2. Install the required packages by running `pip install -r requirements.txt`.
